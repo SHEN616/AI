@@ -1,0 +1,368 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.price-bg{
+    background: url('/images/img.svg') no-repeat top center;
+    position: absolute;
+    background-size: cover;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 885px;
+    height: 559px;
+    @media (max-width:768px) {
+        background-image: url('/images/Mask\ Group\ 2.svg');
+        top: 90px;
+        background-size: contain;
+        width: 100%;
+        
+    }
+}
+.gray-bg{
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    position: absolute;
+    width: 100%;
+    height: 470px;
+    z-index: -999;
+    top: 0;
+    @media (max-width:768px) {
+        height: 495px;
+        top: 90px;
+        border-radius: 0 0 0 50%;
+    }
+}
+.header{
+    width: 100%;
+    padding: 24px 6%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 218.06px;
+        height: 40px;
+    }
+    .btn{
+        display: block;
+        background: $red;
+        border-radius: 22px;
+        padding: 8px 32px 8px 32px;
+        text-decoration: none;
+        color: $white;
+        font-size: 16px;
+    } 
+    @media (max-width:768px) {
+        padding: 24px 2.5%;
+        border-bottom: 2px solid yellow;
+        img {
+            width: 130.84px;
+            height: 24px;
+        }
+    }
+}
+
+
+.container{
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.direction{
+    display: flex;
+    flex-direction: column;
+    margin: 92px auto 280px;
+    h2 {
+        font-weight: bold;
+        margin-bottom: 16px;
+        font-size: 48px;
+        line-height: 70px;
+        color: $black;
+        @media (max-width:768px) {
+            font-size: 32px;
+        }
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        @media (max-width:768px) {
+            font-size: 16px;
+        }
+    }
+    @media (max-width:768px) {
+        margin: 48px auto 100%;
+    }
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    text-align: center;
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 46px;
+    }
+    @media (max-width:768px) {
+        margin-bottom: 60px;
+    }
+}
+.btn-wrap{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+.btn-price {
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    border: 1px solid $blue;
+    background: $white;
+    border-radius: 27px;
+    color: $blue;
+    cursor: pointer;
+    &:hover,
+    &.active {
+        background: $blue;
+        color: $white;
+    }
+}
+
+
+span {
+    line-height: 35px;
+    color: $black;
+    font-size: 32px;
+}
+
+.line {
+    width: 100%;
+    color: #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+}
+
+.place-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    text-align: center;
+    padding-top: 66px;
+    @media (max-width:768px) {
+        gap: 24px;
+    }
+    .place-item{
+        box-shadow: 0 2px 10px #00000014;
+        border-radius: 12px;
+        padding-bottom: 38px;
+        @media (max-width:768px) {
+            padding-bottom: 25px;
+        }
+        h4{
+            padding: 10px 29px 10px 29px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: center;
+        }
+        p{
+            padding: 32px 0;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .numbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 21px;
+            padding-left: 30px;
+            padding-right: 30px;
+            @media (max-width:768px) {
+                gap: 6px;
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+            .equal {
+                font-size: 32px;
+            }
+        }
+        .numbox-mountprice,
+        .numbox-user {
+            width: 169px;
+            height: 108px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 12px;
+            background: #F5F5F5;
+        }
+        .numbox-user{
+            @media (max-width:768px) {
+                width: 140px;
+                height: 90px;
+            background: #F5F5F5;
+            }
+            .user-title{
+                font-size: 12px;
+                line-height: 17px;
+            }
+            .user-count{
+                color: $blue;
+                font-size: 32px;
+                line-height: 35px;
+                @media (max-width:768px) {
+                
+                }
+                &::after {
+                    content: '位';
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-left: 8px;
+                }   
+            }
+        }
+        .numbox-mountprice{
+            @media (max-width:768px) {
+                width: 140px;
+                height: 90px;
+                background: #F5F5F5;
+            }
+            .mountprice-title{
+                font-size: 12px;
+                line-height: 17px;
+            }
+            .mountprice-count{
+                color: $black;
+                font-size: 32px;
+                line-height: 35px;
+                &::after {
+                    content: 'TWD';
+                    font-size: 12px;
+                    line-height: 17px;
+                    margin-left: 8px;
+                }   
+            }
+        }
+        .directions-list{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            padding: 32px 0 42px 30px;
+            gap: 16px;
+            font-size: 16px;
+            line-height: 24px;
+            @media (max-width:768px) {
+                
+            }
+            .directions{
+                &::before {
+                display: inline-block;
+                width: 19px;
+                height: 16px;
+                margin-right: 12.94px;
+                content: url("/images/checkmark-outline.svg")
+                }
+            }
+        }
+        .place-btn{
+            width: 136px;
+            height: 49px;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            line-height: 49px;
+            background: $blue;
+            border-radius: 22px;
+            color: $white;
+            font-size: 16px;
+            &:hover,
+            &.active {
+                background: pink;
+                color: $white;
+            }
+        }
+    }
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 100px;
+    h3 {
+        font-size: 32px;
+        line-height: 46px;
+        font-weight: bold;
+        margin-bottom: 48px;
+        @media (max-width: 768px){
+            margin-bottom: 32px;
+        }
+        
+    }
+    
+    @media (max-width: 768px){
+        gap: 16px;
+        margin-bottom: 60px;
+    }
+}
+.question-list{
+    width: 870px;
+    text-align: left;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 2px 10px #00000014;
+    @media (max-width: 576px){
+        width: 334px;
+    }
+    .problem {
+        font-size: 18px;
+        line-height: 28px;
+        padding: 16px 0 16px 32px;
+        @media (max-width: 576px){
+            font-size: 16px;
+            padding: 16px 0 16px 16px;
+        }
+    }
+    .question-btn {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 19px;
+        right: 32px;
+        content: url('/images/icon_plus.svg');
+        cursor: pointer;
+        
+    }
+    .ans{
+        font-size: 16px;
+        padding: 8px 0 16px 32px;
+        line-height: 2;
+        display: none;
+        }
+        &.active {
+            .problem{
+                font-weight: bold;
+                color: $blue;
+            }
+            .question-btn {
+                content: url('/images/icon_minus.svg');
+            }
+            .ans {
+                color: gray;
+                display: block;
+            }
+        }
+}
+
