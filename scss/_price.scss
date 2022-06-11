@@ -341,7 +341,7 @@ span {
         position: absolute;
         top: 19px;
         right: 32px;
-        content: url('../images/icon_plus.svg');
+        content: url('images/icon_plus.svg');
         cursor: pointer;
         
     }
@@ -357,7 +357,7 @@ span {
                 color: $blue;
             }
             .question-btn {
-                content: url('../images/icon_minus.svg');
+                content: url('images/icon_minus.svg');
             }
             .ans {
                 color: gray;
